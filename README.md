@@ -1,6 +1,6 @@
-# Delivery App
+# Rest Countries API
 
-Delivery App for university lecture
+A Rest API for university lecture
 
 # Libraries
 - Express
@@ -8,7 +8,7 @@ Delivery App for university lecture
 - JSON Web Token
 - Sequelize
 - Dotenv
-- Mysql2
+- Postgres
 
 # Dev libraries
 - Nodemon
