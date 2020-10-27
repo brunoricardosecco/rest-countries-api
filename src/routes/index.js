@@ -11,5 +11,6 @@ routes.post('/users/authenticate', UserController.authenticate);
 routes.use(authMiddleware);
 
 routes.post('/region', RegionController.create);
+routes.get('/region', RegionController.findAll);
 
 module.exports = routes;
