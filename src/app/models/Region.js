@@ -20,8 +20,8 @@ module.exports = (sequelize, DataTypes) => {
 
   Region.associate = (models) => {
     Region.hasMany(models.Country, {
-      as: 'countries',
-      foreignKey: 'country_id',
+      as: 'country',
+      foreignKey: 'id_region',
       targetKey: 'id',
     });
   };
