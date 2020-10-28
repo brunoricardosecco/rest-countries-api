@@ -7,6 +7,12 @@ module.exports = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
   dialect: process.env.DB_DIALECT || 'postgres',
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
   operatorAliases: false,
   logging: false,
   define: {
@@ -15,5 +21,6 @@ module.exports = {
     underscoredAll: true,
     createdAt: 'created_at',
     updatedAt: 'updated_at',
+    ssl: true,
   },
 };
